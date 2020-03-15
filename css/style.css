@@ -1,0 +1,202 @@
+html{
+    font: 100%/1.6 source-han-sans-japanese, sans-serif; 
+    font-family: source-han-sans-japanese, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position:relative;
+}
+
+.top{
+    margin: 10px;
+    height: 100vh;
+    padding: 170px 0 0 ;
+    background: #5ACCAE;
+    color: white;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+
+.top-h1-con{
+    margin: auto;
+    width: 155px;
+}
+
+.top-h1{
+    margin: 0;
+    text-align: center;
+}
+
+.top-p-con{
+    margin: auto;
+    width: 200px;
+}
+
+.top-p{
+    margin: 0;
+    text-align: center;
+}
+
+.profile{
+    padding: 60px;
+    color: #2e2e2e;
+}
+
+.profile-desc{
+    font-size: 0.8em;
+}
+
+.profile-img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid #49CCAB;
+    border-radius: 50px;
+}
+
+.profile-img-con{
+    padding: 30px 30px 10px 10px;
+}
+
+.github-a,.qiita-a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    
+}
+
+.github-a img,.qiita-a img{
+    width: 70px;
+}
+
+.github-a img:hover,.qiita-a img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.links{
+    margin: 10px;
+    background: #4ED9B6;
+    color: white;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+
+.links-container{
+    padding: 60px;
+}
+
+.works{
+    color: #2e2e2e;
+    padding: 60px;
+}
+
+.work-tag{
+    margin: 4px;
+    font-size: 12px;
+    color: white;
+    background: #4ed9b6;
+    padding: 3px 5px 5px 5px ;
+    border-radius: 3px;
+}
+
+.work-used{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.work-desc{
+    font-size: 13px;
+}
+
+.skill{
+    padding: 60px;
+    margin: 10px;
+    background: #4ED9B6;
+    color: white;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+
+.skill-tag{
+    margin: 4px;
+    font-size: 12px;
+    color: #4ed9b6;
+    background: white;
+    padding: 3px 5px 5px 5px ;
+    border-radius: 3px;
+}
+
+.skill-tag-name{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.end{
+    padding: 60px;
+}
+
+.end h2{
+    margin: 30px;
+    font-size: 14px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.to-top{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    background: #4ed9b6;    
+    transition: 0.2s;
+}
+
+.to-top:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+@media screen and (min-width:480px) and (max-width:599px) {
+    .profile-contents{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:959px) {
+    .profile-contents{
+        display: flex;
+    }
+
+    .pc-none{ display: none; }
+    
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .profile-contents{
+        display: flex;
+    }
+
+    .pc-none{ display: none; }
+    
+}
+
+@media screen and (min-width:1280px) {
+    .profile-contents{
+        display: flex;
+    }
+
+    .pc-none{ display: none; }
+    
+}
