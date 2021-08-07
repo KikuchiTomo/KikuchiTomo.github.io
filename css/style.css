@@ -1,202 +1,82 @@
-html{
-    font: 100%/1.6 source-han-sans-japanese, sans-serif; 
-    font-family: source-han-sans-japanese, sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
+/*
+#1B207A
+#3242A3
+#437DBA
+#5CAFC9
+#98D3DB
+#E5E3D5    
+*/
 
-body{
-    margin: 0;
-    padding: 0;
-    position:relative;
-}
 
-.top{
-    margin: 10px;
+html, body{
+    scroll-behavior: smooth;    
     height: 100vh;
-    padding: 170px 0 0 ;
-    background: #5ACCAE;
-    color: white;
-    background-size: auto 100%;
-    overflow: hidden;
-}
-
-.top-h1-con{
-    margin: auto;
-    width: 155px;
-}
-
-.top-h1{
+    overflow: scroll;
     margin: 0;
-    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #2e2e2e;    
 }
 
-.top-p-con{
-    margin: auto;
-    width: 200px;
+h1{
+   font-size: 1.2em;
+   margin: 0;
 }
 
-.top-p{
-    margin: 0;
-    text-align: center;
+h2{
+    display: inline;
+    font-size: 1.2em;
+    margin: 11px 0px;    
 }
 
-.profile{
-    padding: 60px;
-    color: #2e2e2e;
+h3{
+    font-weight: 500;
+    font-size: 0.9em;
+    margin: 9px 0px;    
 }
 
-.profile-desc{
+h4{
+    font-weight: 500;
     font-size: 0.8em;
+    margin: 6px 0px;    
 }
 
-.profile-img{
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-    border: 0.5px solid #49CCAB;
-    border-radius: 50px;
+p{
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 2px 0px;
 }
 
-.profile-img-con{
-    padding: 30px 30px 10px 10px;
+ul li {
+    padding-left: 0.4em;
+    text-indent: -0.4em;
 }
 
-.github-a,.qiita-a{
-    display: block;
-    text-decoration: none;
+ul {
+    list-style: none;
+    padding-left: 0.4em;
+    text-indent: -0.4em;    
+}
+
+.white{
     color: white;
-    width: 70px;
-    
 }
 
-.github-a img,.qiita-a img{
-    width: 70px;
-}
-
-.github-a img:hover,.qiita-a img:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.links{
-    margin: 10px;
-    background: #4ED9B6;
-    color: white;
-    background-size: auto 100%;
-    overflow: hidden;
-}
-
-.links-container{
-    padding: 60px;
-}
-
-.works{
+.black{
     color: #2e2e2e;
-    padding: 60px;
 }
 
-.work-tag{
-    margin: 4px;
-    font-size: 12px;
-    color: white;
-    background: #4ed9b6;
-    padding: 3px 5px 5px 5px ;
-    border-radius: 3px;
+.water{
+    color: #98D3DB;
 }
 
-.work-used{
-    padding-left: 5px;
-    font-size: 12px;
-}
-
-.work-desc{
-    font-size: 13px;
-}
-
-.skill{
-    padding: 60px;
-    margin: 10px;
-    background: #4ED9B6;
-    color: white;
-    background-size: auto 100%;
-    overflow: hidden;
-}
-
-.skill-tag{
-    margin: 4px;
-    font-size: 12px;
-    color: #4ed9b6;
+.back-white{
+    padding: 3px 5px 4px 5px;
     background: white;
-    padding: 3px 5px 5px 5px ;
     border-radius: 3px;
 }
 
-.skill-tag-name{
-    padding-left: 5px;
-    font-size: 12px;
-}
-
-.end{
-    padding: 60px;
-}
-
-.end h2{
-    margin: 30px;
-    font-size: 14px;
-    color: #2e2e2e;
-    text-align: center;
-}
-
-.to-top{
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    line-height: 100px;
-    text-align: center;
-    text-decoration: none;
-    margin: auto;
-    color: white;
-    background: #4ed9b6;    
-    transition: 0.2s;
-}
-
-.to-top:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-@media screen and (min-width:480px) and (max-width:599px) {
-    .profile-contents{
-        display: flex;
-    }
-
-}
-
-@media screen and (min-width:600px) and (max-width:959px) {
-    .profile-contents{
-        display: flex;
-    }
-
-    .pc-none{ display: none; }
-    
-}
-
-@media screen and (min-width:960px) and (max-width:1279px) {
-    .profile-contents{
-        display: flex;
-    }
-
-    .pc-none{ display: none; }
-    
-}
-
-@media screen and (min-width:1280px) {
-    .profile-contents{
-        display: flex;
-    }
-
-    .pc-none{ display: none; }
-    
+.back-water{
+    padding: 3px 5px 4px 5px;    
+    background: #98D3DB;
+    border-radius: 3px;    
 }

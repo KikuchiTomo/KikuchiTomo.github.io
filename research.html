@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja" id="html">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8">
+        <title>Kikuchi Tomo | Research</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/research.css">
+        <script src="js/scroll_change_color.js"></script>
+        <script>
+         function closeMenu(rink){
+             let menu_elem = document.getElementById('menu-ham');
+             menu_elem.checked = false;
+         }
+        </script>
+    </head>
+    <body id="body">
+        <section id="top" class="research-top">
+            <div class="top-background" id="top-bak">
+                <div class="top-title">
+                    <h2 class="water back-white">創造実習</h2>
+                </div>
+                <div class="top-content">
+                    <h3 class="white">準備中</h3>
+                </div>
+            </div>
+            
+            <input type="checkbox" id="menu-ham">
+            <label for="menu-ham" class="menu-button">
+                <span id="hams"></span>
+            </label>
+            <nav class="menu-container">
+                <a href="index.html#top" onclick="closeMenu();">Top page</a>
+                <a href="index.html#intro" onclick="closeMenu();">Self introduction</a>
+                <a href="index.html#skill" onclick="closeMenu();">Skill</a>
+                <a href="research.html" onclick="closeMenu();">Research</a>
+                <a href="index.html#links" onclick="closeMenu();">Links</a>
+            </nav>
+            <div class="menu-background" id="menu-bak">
+                <h1>Kikuchi's HP</h1>
+            </div>            
+            <!-- BEGIN TOP CONTENT -->
+            <!-- END TOP CONTENT -->
+        </section>
+        <section class="research-creative" id="intro">
+            <div class="creative-title">
+                <h2 class="black">制作物</h2>
+            </div>
+            <div class="creative-content">
+                <ul>
+                    <li><h4 class="black">高専祭Webアプリ</h4></li>
+                    <ul>
+                        <li>
+                            <p>
+                                <small class="mark">
+                                    WebサーバにはNginxを用い，フレームワークにはSinatraを使用した．NginxとSinatraの接続にUnicornを用いて構成してある．DBにはMySQLを使用した．機能としては，記事の管理や画像の投稿，開催される企画の管理，管理ユーザの管理(追加・ワンタイムパスワード発行)などで，企画の検索機能(APIも作った)をつけることによりパンフレットの発行部数の削減を狙った．一部の画面は非同期通信にした．
+                                </small>
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li><h4 class="black">ニキシー管用電源用基板</h4></li>
+                    <ul>
+                        <li>
+                            <p>
+                                <small class="mark">
+                                    趣味の電子工作でニキシー管が好きなので，その電源用回路と基板を作成した．12Vから降圧して5V電源と昇圧して130 ~ 230V電源を出力する．KiCADで作った
+                                </small>
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+        <section class="research-sotu">
+            <div class="sotu-title">
+                <h2 class="water back-white">卒研</h2>                
+            </div>
+            <div class="sotu-content">
+                <ul>
+                    <li><h4 class="white">準備中</h4></li>
+                    <ul>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p class="copyright"><small>&copy; 2021 KIKUCHI TOMOO. All Rights Reserved<small></p>
+        </footer>
+    </body>
+    <script>
+     // setting (change color)
+     window.onload = function(){
+         
+         var cc = new scrollChangeClass({
+             observe_target_id: 'body',
+             color_target_ids: ['hams', 'menu-bak'],
+             trigger_target_id: 'top-bak',
+             class_name: 'scroll-changed'
+         });
+
+         cc.proc() // リロード時用
+
+         var body = document.getElementById('body')
+         body.addEventListener('scroll', function(e){
+             cc.proc()
+         })
+     }
+    </script>
+</html>

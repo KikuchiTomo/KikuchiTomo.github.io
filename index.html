@@ -1,281 +1,183 @@
 <!DOCTYPE html>
-<html lang="ja" id="html-top">
+<html lang="ja" id="html">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
-        <meta name="description" content="ポートフォリオ">
-        <meta name="author"      content="Tomoo Kikuchi">
-        <meta name="generator"   content="emacs">
-        <meta name="viewport"    content="width=device-width,initial-scale=1.0">
-        <title>Portfolio - KIKUCHI TOMOO</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/text_animetion.css">
+        <title>Kikuchi Tomo | Home</title>
         <link rel="shortcut icon" href="favicon.ico">
-        <script src="script/scrollreveal.min.js"></script>
-        <script src="script/text_animetion.js"></script>
-        <!-- <script src="node_modules/mojs-player/build/mojs-player.js"></script> -->
-        <!-- <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script> -->
-        <script>         
-         (function(d) {
-             var config = {
-                 kitId: 'ceh6ffk',
-                 scriptTimeout: 3000,
-                 async: true
-             },
-                 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-         })(document);
-        </script>
-    </head>    
-</html>
-<body id="body-top">
-    <script src="assets/mojs/mo.min.js"></script>
-    <script src="script/mymo.js"></script>
-    
-    <section class="top">
-        <div class="top-datas">
-            <div class="top-h1-con scroll-animation">
-                <h1 id="top-h1-0" class="top-h1 text-animetion">Hello World!</h1>
-                <h1 id="top-h1-1" class="top-h1 text-animetion">Hello World!</h1>
-                <h1 id="top-h1-2" class="top-h1 text-animetion">Hello World!</h1>
-                <br>
-            </div>
-            <div class="top-p-con scroll-animation">
-                <p id="top-p" class="top-p  text-animetion">Welcome to My Portfolio!</p>
-            </div>
-        </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/scroll_change_color.js"></script>
         <script>
-         var tAnis0 = new tAni({
-             id : 'top-h1-0',
-             speed : 100,
-             delay : 400,
-             ran   : true
-         });
-         
-         var tAnis1 = new tAni({
-             id : 'top-h1-1',
-             speed : 100,
-             delay : 700,
-             ran   : true
-         });
-
-         var tAnis3 = new tAni({
-             id : 'top-h1-2',
-             speed : 100,
-             delay : 1000,
-             ran   : true
-         });
-
-         var tAnis2 = new tAni({
-             id : 'top-p',
-             speed : 100,
-             delay : 1200,
-             ran   : true
-         });
+         function closeMenu(rink){
+             let menu_elem = document.getElementById('menu-ham');
+             menu_elem.checked = false;
+         }
         </script>
-        <div class="top-motions">
-            <div id="motion-0" class="top-motion-0">
-            </div>
-        </div>
-    </section>
-    <section class="profile">
-        <div>
-            <div class="profile-content">
-                <div class="profile-title scroll-animation"><h2>About me</h2></div>
-                <div class="profile-contents">
-                    <div class="profile-img-con scroll-animation">
-                        <img class="profile-img scroll-animation" alt="My Profile Image" src="img/myprofile.png">
-                    </div>
-                    <div class="scroll-animation">
-                        <p class="profile-name">KIKUCHI TOMOO　(17)</p>
-                        <p class="profile-desc">高専で情報通信工学を勉強しながらITベンチャー企業でアルバイトをしています。フロントエンド/バックエンドどちらも開発経験があります。Sinatra/Unicorn/Nginx/MySQL等を用いてのwebアプリ開発やC言語での組み込み開発,C++/Java/Ruby/Pythonでのソフトウェア開発などもしています。</p>
-                    </div>
+    </head>
+    <body id="body">
+        <section id="top" class="index-top">
+            <div class="top-background" id="top-bak">
+                <div class="top-content">
+                    <h2 class="white">こんにちは！<br>菊地 友央のポートフォリオです</h2>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="links">
-        <div class="links-container">
-            <div class="link-title scroll-animation"><h2>Links</h2></div>
-            <div>
-                <div class="github-a">
-                    <a class="github-a scroll-animation" alt="GitHub LINK" href="https://github.com/KikuchiTomo">
-                        <img class="scroll-animation" title="GitHub" src="img/GitHub_Logo.png">
-                    </a>
-                </div>
-                <div class="qiita-a">
-                    <a class="qiita-a scroll-animation" alt="Qiita LINK" href="https://qiita.com/creepertom"><img title="Qiita" src="img/Qiita_Logo.png"></a>
-                </div>
+            
+            <input type="checkbox" id="menu-ham">
+            <label for="menu-ham" class="menu-button">
+                <span id="hams"></span>
+            </label>
+            <nav class="menu-container">
+                <a href="index.html#top" onclick="closeMenu();">Top page</a>
+                <a href="index.html#intro" onclick="closeMenu();">Self introduction</a>
+                <a href="index.html#skill" onclick="closeMenu();">Skill</a>
+                <a href="research.html" onclick="closeMenu();">Research</a>
+                <a href="index.html#links" onclick="closeMenu();">Links</a>
+            </nav>
+            <div class="menu-background" id="menu-bak">
+                <h1>Kikuchi's HP</h1>
+            </div>            
+            <!-- BEGIN TOP CONTENT -->
+            <!-- END TOP CONTENT -->
+        </section>
+        <section class="index-introduction" id="intro">
+            <div class="introduction-title">
+                <h2 class="black">自己紹介</h2>
             </div>
-        </div>
-    </section>
-    <section class="works">
-        <div>
-            <div>
-                <div class="works-title scroll-animation"><h2>Works</h2></div>
-                <!-- my work -->
-                <div class="works-ones scroll-animation">
-                    <div class="work-img">
-                    </div>
-                    <div class="work-desc">
-                        <div class="work-name">
-                            <h3>webアプリ</h3>
-                        </div>
-                        <div class="work-system">
-                            <span class="work-tag">使用したもの</span>
-                            <br class="pc-none">
-                            <br class="pc-none">
-                            <span class="work-used">
-                                Ubuntu 16LTS / Sinatra / Nginx / Unicorn / Ruby / JavaScript / HTML / CSS
-                            </span>
-                        </div>
-                        <div class="work-desc">
-                            <p>学祭のパンプレットの代わりになるサイトとして企画情報やTOPICを検索できるようなwebアプリをフロント/バックどちらも組みました。<br>
-                                画像アップロードに関してはAjaxを使用し非同期処理にしています。<br>
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- my work/ -->
-                <!-- my work -->
-                <!-- <div class="works-ones scroll-animation">
-                     <div class="work-img">
-                     </div>
-                     <div class="work-desc">
-                     <div class="work-name">
-                     <h3>kanban0</h3>
-                     </div>
-                     <div class="work-system">
-                     <span class="work-tag">使用したもの</span>
-                     <br class="pc-none">
-                     <br class="pc-none">
-                     <span class="work-used">
-                     JavaScript / HTML / CSS
-                     </span>
-                     </div>
-                     <div class="work-desc">
-                     <p>ドラッグ&ドロップで使われる看板システムのライブラリです。<br>
-                     一つの看板のitemの中身を文字列だけでなくinnerHTMLで表すことができるため、<br>
-                     自由度が高く画像などを含むことができます。Chromeに対応しています
-                     </p>
-                     </div>
-                     </div>                    
-                     </div> -->
-                <!-- my work/ -->
-                <!-- my work -->
-                <div class="works-ones scroll-animation">
-                    <div class="work-img">
-                    </div>
-                    <div class="work-desc">
-                        <div class="work-name">
-                            <h3>tAni</h3>
-                        </div>
-                        <div class="work-system">
-                            <span class="work-tag">使用したもの</span>
-                            <br class="pc-none">
-                            <br class="pc-none">
-                            <span class="work-used">
-                                JavaScript / HTML / CSS
-                            </span>
-                        </div>
-                        <div class="work-desc">
-                            <p>今回のポートフォリオ制作のために作ったテキストアニメーションです。<br>
-                                一文字ずつ文字を表示することができ、出現方向やタイミング、アニメーション間隔を変更できます。<br>
-                                Chrome / FireFox / Opera / Safari　に対応しています
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- my work/ -->
-                <!-- my work -->
-                <div class="works-ones scroll-animation">
-                    <div class="work-img">
-                    </div>
-                    <div class="work-desc">
-                        <div class="work-name">
-                            <h3>webページ</h3>
-                        </div>
-                        <div class="work-system">
-                            <span class="work-tag">使用したもの</span>
-                            <br class="pc-none">
-                            <br class="pc-none">
-                            <span class="work-used">
-                                JavaScript / HTML / CSS
-                            </span>
-                        </div>
-                        <div class="work-desc">
-                            <p>今回のポートフォリオサイトの様なサイトのほかに、レスポンシブなサイトを制作できます。<br>
-                                <!-- 法人のwebページ作成の実績があります。 -->
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- my work/ -->
+            <div class="introduction-content">
+                <ul>
+                    <li><h3 class="black">菊地 友央</h3></li>
+                    <ul>
+                        <li><h4 class="black">所属</h4></li>
+                        <ul>
+                            <li><p><small class="mark">産業技術高等専門学校 情報通信工学コース 4年</small></p></li>
+                            <li><p><small class="mark">山本研究室</small></p></li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><h4 class="black">趣味</h4></li>
+                        <ul>
+                            <li><p><small class="mark">電子工作</small></p></li>
+                            <li><p><small class="mark">アプリ開発(iOS)</small></p></li>
+                            <li><p><small class="mark">Webアプリ開発</small></p></li>
+                            <li><p><small class="mark">ドラム</small></p></li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><h4 class="black">興味があること</h4></li>
+                        <ul>
+                            <li><p><small class="mark">画像処理・人工知能</small></p></li>
+                            <li><p><small class="mark">ネットワーク&nbsp;(&nbsp;ネットワークスペシャリスト試験勉強中です&nbsp;)</small></p></li>
+                            <li><p><small class="mark">信号処理</small></p></li>
+                            <li><p><small class="mark">組み込み&nbsp;(&nbsp;エンべデットシステムスペシャリストも取りたいです&nbsp;)</small></p></li>
+                        </ul>
+                    </ul>   
+                </ul>
             </div>
-        </div>
-    </section>
-    <section class="skill scroll-animation">
-        <div>
-            <div class="skill-title">
-                <h3>Skill set</h3>
+        </section>
+        <!-- <section class="index-skills" id="skill"> -->
+        <!--     <div class="skills-title"> -->
+        <!--         <h2 class="water back-white">スキル</h2> -->
+        <!--     </div> -->
+        <!--     <div class="skills-content"> -->
+        <!--         <ul> -->
+        <!--             <li><h3 class="white">使えるもの</h3></li> -->
+        <!--             <ul> -->
+        <!--                 <li><h4 class="white">OS</h4></li> -->
+        <!--                 <ul> -->
+        <!--                     <li><p><small class="mark">Linux / Mac / Windows</small></p></li> -->
+        <!--                 </ul> -->
+        <!--                 <li><h4 class="white">プログラミング言語</h4></li> -->
+        <!--                 <ul> -->
+        <!--                     <li><p><small class="mark">C</small></p></li> -->
+        <!--                     <li><p><small class="mark">C++ (2011)</small></p></li> -->
+        <!--                     <li><p><small class="mark">Ruby</small></p></li> -->
+        <!--                     <li><p><small class="mark">JavaScript</small></p></li> -->
+        <!--                     <li><p><small class="mark">Swift5</small></p></li> -->
+        <!--                 </ul> -->
+        <!--                 <li><h4 class="white">デザイン言語</h4></li> -->
+        <!--                 <ul> -->
+        <!--                     <li><p><small class="mark">HTML / CSS</small></p></li> -->
+        <!--                 </ul>                               -->
+        <!--             </ul>                     -->
+        <!--         </ul> -->
+        <!--     </div> -->
+        <!-- </section> -->
+        <section class="index-skills" id="skill">
+            <div class="skills-title">
+                <h2 class="water back-white">Skiils</h2>
             </div>
-            <div class="skill-desc">
-                <div>
-                    <span class="skill-tag">OS</span>
-                    <br class="pc-none">
-                    <br class="pc-none">
-                    <span class="skill-tag-name">Ubuntu / CentOS / MacOS / Windows</span>
-                </div>
-                <br>
-                <div>
-                    <span class="skill-tag">言語</span>
-                    <br class="pc-none">
-                    <br class="pc-none">
-                    <span class="skill-tag-name">C / C++ / Ruby / Python / JavaScript / Java / HTML / CSS</span>                    
-                </div>
-                <br>
-                <div>
-                    <span class="skill-tag">フレームワーク</span>
-                    <br class="pc-none">
-                    <br class="pc-none">
-                    <span class="skill-tag-name">Nginx / Unicorn / Sinatra</span>                    
-                </div>
-                <br>
-                <div>
-                    <span class="skill-tag">TOOLS</span>
-                    <br class="pc-none">
-                    <br class="pc-none">
-                    <span class="skill-tag-name">Git / Emacs / Vim / Visual Studio / Xcode / Android Studio</span>                    
-                </div>
-                <br>
-                <div>
-                    <span class="skill-tag">資格</span>
-                    <br class="pc-none">
-                    <br class="pc-none">
-                    <span class="skill-tag-name">FE試験取得</span>                    
-                </div>
-                <br>
-
+            <div class="skills-content">
+                <ul>
+                    <li><p><small class="mark white">Webアプリ開発 ( フロント・バックエンド ) </small></p></li>
+                    <ul>
+                        <li><p><small class="mark white">MySQL / Unicorn / Sinatra / Nginx</small></p></li>
+                    </ul>
+                    <li><p><small class="mark white">Web制作 ( HTML / CSS / JavaScript )</small></p></li>
+                    <li><p><small class="mark white">KiCADでの基板設計・制作</small></p></li>
+                    <li><p><small class="mark white">組み込み開発</small></p></li>
+                    <li><p><small class="mark white">3DCAD</small></p></li>
+                    <li><p><small class="mark white">iOSアプリ開発</small></p></li>
+                    <ul>
+                        <li><p><small class="mark white">Swift5 / Obj-C</small></p></li>
+                    </ul>          
+                    <!-- <li><p><small class="mark">ディジタルファルタ作る ( IIR / FIR )</small></p></li>               -->          
+                </ul>
             </div>
-        </div>
-    </section>
-    <section class="end scroll-animation">
-        <h2>Thank you for coming!</h2>
-        <a class="to-top" href="#html-top">TOP</a>
-    </section>
+        </section>
+        <section class="index-gallery">
+            <div class="img-container">
+                <img alt="My PCB" src="img/my_produce_pcb.jpeg">
+                <img alt="My Desk" src="img/my_workspace.jpeg">
+                <img alt="KiCAD" src="img/pcb_creating.png">
+            </div>
+        </section>
+        <section class="index-links" id="links">
+            <div class="links-title">
+                <h2 class="white">Links</h2>
+            </div>
+            <div class="links-content">
+                <a class="white" href="https://github.com/KikuchiTomo" target="_blank" rel="noopener noreferrer">
+                    <img class="white github-link" src="img/GitHub_Logo_White.png" alt="My GitHub">
+                </a>
+                <a class="white" href="https://Qiita.com/KikuchiTomo" target="_blank" rel="noopener noreferrer">
+                    <img class="white qiita-link" src="img/Qiita_Logo_Black.png" alt="Qiita">
+                </a>
+            </div>
+            <div class="links-content">
+                <a class="white" href="https://www.metro-cit.ac.jp/" target="_blank" rel="noopener noreferrer">
+                    <img class="white tmcit-link" src="img/Tmcit_Logo_Gray.jpeg" alt="TMCIT">
+                </a>
+                <a class="white lab-link" href="http://www2.metro-cit.ac.jp/~yamasho/index.html" target="_blank" rel="noopener noreferrer">
+                     研究室&nbsp;(&nbsp;山本研究室&nbsp;) 
+                </a>
+            </div>
+        </section>          
+        <footer>
+            <p class="copyright"><small>&copy; 2021 KIKUCHI TOMOO. All Rights Reserved<small></p>
+        </footer>
+    </body>
     <script>
-     window.sr = new ScrollReveal();
-     sr.reveal('.scroll-animation');
+     // setting (change color)
+     window.onload = function(){
+         
+         var cc = new scrollChangeClass({
+             observe_target_id: 'body',
+             color_target_ids: ['hams', 'menu-bak'],
+             trigger_target_id: 'top-bak',
+             class_name: 'scroll-changed'
+         });
 
-     var ScrollrevealFade = {
-         origin: 'bottom',
-         distance: '50px',//移動範囲
-         scale: 0,//拡大表示（１で横スクロールが始まる）
-         rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
-         duration: 1500, //アニメーションの速度
-         delay :200 //要素が表示するまでの待機時間（ディレイ）
-     };
+         cc.proc() // リロード時用
 
-     sr.reveal('.scroll-animation', ScrollrevealFade, 20);
-     sr.reveal('.scroll-animation0', ScrollrevealFade, 200);
-     sr.reveal('.scroll-animation1', ScrollrevealFade, 300);
+         var body = document.getElementById('body')
+         body.addEventListener('scroll', function(e){
+             cc.proc()
+         })
+     }
     </script>
-</body>
+</html>
