@@ -32,6 +32,10 @@ body{
     text-align: center;
 }
 
+.tbl-text-top{
+    vertical-align: top;
+}
+
 .tbl-text-right{
     text-align: right;
 }
